@@ -1,0 +1,49 @@
+# Maven target directory
+/target/
+
+# Log files
+*.log
+
+# IntelliJ IDEA project files
+/.idea/
+/*.iml
+*.iws
+
+# Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+/.mvn/
+/.mvn/wrapper/maven-wrapper.jar
+
+# Environment files
+.env
+
+# Spring Boot application properties
+/src/main/resources/application.properties
+/src/main/resources/application.yml
+
+# Exclude IDE-specific settings
+*.iml
+.idea/
+/.vscode/
+
+# Ignore build files
+/build/
+/out/
+
+# Exclude node_modules if using frontend (e.g., React)
+node_modules/
+
+# Exclude any database files
+*.db
+
+# Exclude sensitive files
+*.key
+*.pem
