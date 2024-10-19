@@ -103,41 +103,33 @@ java -jar target/personal-finance-manager.jar budget --category "Food" --amount 
 
 PersonalFinanceManager/
 │
-├── .gitignore                             # File to exclude unnecessary files from Git
-├── README.md                              # Project documentation
-├── pom.xml                                # Maven configuration
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── com/
-│   │   │   │   ├── personalfinancemanager/
-│   │   │   │   │   ├── PersonalFinanceManagerApplication.java # Main Spring Boot app entry point
-│   │   │   │   │   ├── config/           # Configuration classes (e.g., security, database)
-│   │   │   │   │   ├── controller/       # REST controllers for handling HTTP requests
-│   │   │   │   │   ├── dto/              # Data Transfer Objects for requests/responses
-│   │   │   │   │   ├── exception/        # Custom exception handling and error responses
-│   │   │   │   │   ├── model/            # Data models/entities (e.g., Transaction, Budget)
-│   │   │   │   │   ├── repository/       # Data repository interfaces for database interactions
-│   │   │   │   │   ├── service/          # Business logic and service layer
-│   │   │   │   │   ├── util/             # Utility classes (e.g., helpers, mappers)
-│   │   └── resources/
-│   │       ├── application.properties    # Spring Boot configuration file
-│   │       ├── static/                   # (Optional) Static assets like CSS, JS, images for frontend
-│   │       ├── templates/                # (Optional) Thymeleaf templates for the frontend
-│   │       ├── messages.properties       # (Optional) Internationalization messages
-│   └── test/
-│       ├── java/
-│       │   ├── com/
-│       │   │   ├── personalfinancemanager/
-│       │   │   │   ├── controller/       # Test classes for controllers
-│       │   │   │   ├── service/          # Test classes for services
-│       │   │   │   ├── repository/       # Test classes for repositories
-│       │   │   │   ├── PersonalFinanceManagerApplicationTests.java # Test class for main application
-│       └── resources/
-│           ├── application-test.properties # Test configuration properties (e.g., for H2 DB)
+│   │   │   │   ├── finance/
+│   │   │   │   │   ├── manager/
+│   │   │   │   │   │   ├── controller/
+│   │   │   │   │   │   ├── model/
+│   │   │   │   │   │   ├── repository/
+│   │   │   │   │   │   ├── service/
+│   │   │   │   │   │   ├── PersonalFinanceManagerApplication.java
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   ├── static/
+│   │   │   ├── templates/
+│   ├── test/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── finance/
+│   │   │   │   │   ├── manager/
+│   │   │   │   │   │   ├── PersonalFinanceManagerApplicationTests.java
 │
-└── target/                                # Compiled application files
-
+├── target/
+├── .gitignore
+├── LICENSE
+├── pom.xml
+├── README.md
 
 ```
 
