@@ -101,7 +101,6 @@ java -jar target/personal-finance-manager.jar budget --category "Food" --amount 
 
 ## Project Structure
 
-```plaintext
 PersonalFinanceManager/
 │
 ├── .gitignore                             # File to exclude unnecessary files from Git
@@ -109,21 +108,36 @@ PersonalFinanceManager/
 ├── pom.xml                                # Maven configuration
 ├── src/
 │   ├── main/
-│   │   ├── java/com/finance/manager/
-│   │   │   ├── PersonalFinanceManagerApplication.java # Main Spring Boot app
-│   │   │   ├── controller/               # Contains REST controllers
-│   │   │   ├── model/                    # Contains data models/entities (Transaction, Budget, etc.)
-│   │   │   ├── repository/               # Data repository interfaces (e.g., for transactions)
-│   │   │   ├── service/                  # Business logic
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── personalfinancemanager/
+│   │   │   │   │   ├── PersonalFinanceManagerApplication.java # Main Spring Boot app entry point
+│   │   │   │   │   ├── config/           # Configuration classes (e.g., security, database)
+│   │   │   │   │   ├── controller/       # REST controllers for handling HTTP requests
+│   │   │   │   │   ├── dto/              # Data Transfer Objects for requests/responses
+│   │   │   │   │   ├── exception/        # Custom exception handling and error responses
+│   │   │   │   │   ├── model/            # Data models/entities (e.g., Transaction, Budget)
+│   │   │   │   │   ├── repository/       # Data repository interfaces for database interactions
+│   │   │   │   │   ├── service/          # Business logic and service layer
+│   │   │   │   │   ├── util/             # Utility classes (e.g., helpers, mappers)
 │   │   └── resources/
-│   │       ├── application.properties    # Spring Boot configuration file (database, etc.)
-│   │       ├── static/                   # (Optional) Static assets like CSS, JS if you're adding a frontend
+│   │       ├── application.properties    # Spring Boot configuration file
+│   │       ├── static/                   # (Optional) Static assets like CSS, JS, images for frontend
 │   │       ├── templates/                # (Optional) Thymeleaf templates for the frontend
+│   │       ├── messages.properties       # (Optional) Internationalization messages
 │   └── test/
-│       └── java/com/finance/manager/      # Unit tests
-│           ├── PersonalFinanceManagerApplicationTests.java
+│       ├── java/
+│       │   ├── com/
+│       │   │   ├── personalfinancemanager/
+│       │   │   │   ├── controller/       # Test classes for controllers
+│       │   │   │   ├── service/          # Test classes for services
+│       │   │   │   ├── repository/       # Test classes for repositories
+│       │   │   │   ├── PersonalFinanceManagerApplicationTests.java # Test class for main application
+│       └── resources/
+│           ├── application-test.properties # Test configuration properties (e.g., for H2 DB)
 │
 └── target/                                # Compiled application files
+
 
 ```
 
