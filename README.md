@@ -101,6 +101,7 @@ java -jar target/personal-finance-manager.jar budget --category "Food" --amount 
 
 ## Project Structure
 
+```plaintext
 PersonalFinanceManager/
 │
 ├── src/
@@ -130,8 +131,7 @@ PersonalFinanceManager/
 ├── LICENSE
 ├── pom.xml
 ├── README.md
-
-```
+'''
 
 ## Database Configuration
 
