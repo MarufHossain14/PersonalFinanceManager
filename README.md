@@ -113,7 +113,7 @@ PersonalFinanceManager/
 │   │   │   │   │   │   ├── controller/
 │   │   │   │   │   │   ├── model/
 │   │   │   │   │   │   ├── repository/
-│   │   │   │   │   │   ├── service/
+│   │   │   │   │   │   ├── services/
 │   │   │   │   │   │   ├── PersonalFinanceManagerApplication.java
 │   │   ├── resources/
 │   │   │   ├── application.properties

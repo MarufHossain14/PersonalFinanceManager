@@ -47,3 +47,4 @@ node_modules/
 # Exclude sensitive files
 *.key
 *.pem
+/bin/
